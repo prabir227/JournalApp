@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/prabir227/JournalApp.git'
+                // Explicitly specify the branch as 'main'
+                git branch: 'main', url: 'https://github.com/prabir227/JournalApp.git'
             }
         }
 
