@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    triggers{
+            githubPush()
+            }
     environment {
         COMPOSE_FILE = 'docker-compose.yml'
     }
