@@ -3,6 +3,11 @@ pipeline {
     triggers{
             githubPush()
             }
+
+    tools {
+            maven 'apache-maven-3.8.8'
+            jdk 'jdk21'
+        }
     environment {
         COMPOSE_FILE = 'docker-compose.yml'
     }
