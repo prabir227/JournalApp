@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/journals")
+@RequestMapping("/journal")
 public class JournalEntryController {
     @Autowired
     JournalService journalService;
